@@ -1,0 +1,24 @@
+<!-- страничка с подробной информацией об услуге -->
+
+{% extends 'base.html' %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+
+{% block content %}
+<div class="card_serv">
+  <div>
+    <p class="service-text">{{ s.text }}</p>
+
+    <p></p>
+    <p class="service-text">Подробнее о данном типе визы:</p>
+    <p></p>
+
+    {% for var in s.simp %}
+    <li class="service-text-li">{{ var }}</li>
+    {% endfor %}
+  </div>
+</div>
+
+<button class="btn">
+  <a href="/" padding-right: 10px;>Вернуться к списку виз</a>
+</button>
+{% endblock %}

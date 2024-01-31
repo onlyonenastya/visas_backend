@@ -1,0 +1,25 @@
+<!-- страничка, выводящая весь список услуг -->
+
+{% extends 'base.html' %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}" />
+
+{% block title %}
+<p class="service-top">Визовый центр РФ</p>
+{% endblock %} {% block content %}
+
+<form action="" method="get">
+  <input name="query" type="text" /><br /><br />
+  <input type="submit" value="Поиск" />
+</form>
+
+<ul>
+  {% for service in services %}
+  <tr>
+    {% include 'service_element.html' with element=service %}
+  </tr>
+  {% empty %}
+  <li>Список пуст</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

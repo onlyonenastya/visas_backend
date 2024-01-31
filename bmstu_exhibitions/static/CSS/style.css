@@ -1,0 +1,81 @@
+.service-text {
+  text-indent: 20px;
+  display: inline;
+  color: black;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 4px;
+}
+
+.service-text-li {
+  font-size: 1rem;
+  font-family: Arial;
+  margin-left: 3px;
+}
+
+.card {
+  margin: 5px;
+  border: 3px solid #dc008b;
+  height: 200px;
+  width: 150px;
+  /*height: 50px;*/
+}
+
+.card-body {
+  text-align: center;
+}
+
+.service-top {
+  height: 40px;
+  padding-right: 3px;
+  background: #006cdc;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card_2 {
+  margin-top: 3px;
+  border: 3px solid #006cdc;
+  height: 270px;
+  width: 200px;
+  border-radius: 5px;
+  margin-left: 1px;
+  text-align: center;
+}
+
+.card_serv {
+  margin-top: 15px;
+  margin-left: 5px;
+  border: 3px solid #006cdc;
+  height: 400px;
+  width: 450px;
+  border-radius: 5px;
+}
+
+.aspect_st {
+  color: black;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.butt_serv {
+  position: relative;
+  bottom: 5px;
+  font-size: 14px;
+  background-color: #006cdc;
+  border-radius: 4px;
+  width: 140px;
+}
+
+.btn {
+  display: inline;
+  bottom: 5px;
+  font-size: 14px;
+  background-color: #006cdc;
+  border-radius: 4px;
+  width: 200px;
+  margin-left: 4px;
+  margin-top: 3px;
+}
