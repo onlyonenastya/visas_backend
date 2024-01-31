@@ -1,0 +1,30 @@
+<!-- отрисовка одной карточки -->
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+
+<div class="card_2">
+  <img
+    src="{% static element.url %}"
+    width="145px"
+    ,
+    height="110px"
+    ,
+    hspace="3px"
+    ,
+    vspace="3px"
+    alt="картинка"
+  />
+
+  <div class="card-body">
+    <p class="aspect_st">{{ element.aspect }}</p>
+    <button class="butt_serv">
+      <a href="{% url 'vise_url' element.id %}">{{ element.country }}</a>
+    </button>
+
+    <form method="post" action="{% url 'delete_vise' element.id %}">
+      {% csrf_token %}
+      <input value="delete" type="submit" />
+    </form>
+  </div>
+</div>
